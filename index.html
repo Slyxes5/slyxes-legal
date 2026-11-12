@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slyxes — Desktop Creator Studio</title>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111726;
+      --border: #1f293d;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent: #6366f1;
+      --accent-hover: #4f46e5;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(99, 102, 241, 0.15);
+      color: #818cf8;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin: 0 0 16px 0;
+      letter-spacing: -0.025em;
+    }
+    p.lead {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 40px 0;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .links a {
+      color: #818cf8;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Desktop Workspace</span>
+      <h1>Slyxes Creator Studio</h1>
+      <p class="lead">A local-first desktop application designed for creators to preview video assets, organize library versions, schedule publishing, and review channel metrics.</p>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <h3>🎬 Video Library</h3>
+        <p>Preview rendered MP4 outputs, organize version revisions (v1, v2, v3), and manage storage with automatic pruning of outdated files.</p>
+      </div>
+      <div class="card">
+        <h3>📱 Social Accounts</h3>
+        <p>Direct integration with official platforms including TikTok Login Kit and YouTube Data API. Review status and schedule content safely.</p>
+      </div>
+      <div class="card">
+        <h3>🔒 Local & Private</h3>
+        <p>Credentials and tokens are stored locally on your device with Windows DPAPI encryption. No cloud servers, no data brokering.</p>
+      </div>
+    </div>
+
+    <footer>
+      <div>&copy; 2026 Slyxes. All rights reserved.</div>
+      <div class="links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://github.com/Slyxes5/slyxes-legal" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

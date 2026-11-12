@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Slyxes</title>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111726;
+      --border: #1f293d;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent: #6366f1;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 8px; color: #fff; }
+    .updated { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 36px; }
+    h2 { font-size: 1.35rem; color: #fff; margin-top: 36px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+    p, li { color: #cbd5e1; font-size: 1rem; }
+    a { color: #818cf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .nav { margin-bottom: 32px; }
+    .highlight-box {
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    footer { border-top: 1px solid var(--border); padding-top: 24px; margin-top: 60px; font-size: 0.9rem; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav"><a href="index.html">&larr; Back to Slyxes</a></div>
+    <h1>Privacy Policy</h1>
+    <div class="updated">Last updated: November 12, 2026</div>
+
+    <div class="highlight-box">
+      <strong>Privacy-First Commitment:</strong> Slyxes operates as a client-side desktop software. We do not operate central data harvesting servers, and we never sell, monetize, or share your personal information.
+    </div>
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>This Privacy Policy explains how <strong>Slyxes</strong> ("we", "us", or "our") accesses, processes, and protects your information when you use our desktop application and connect third-party developer integrations (such as TikTok and YouTube).</p>
+
+      <h2>2. Information We Access & Purpose</h2>
+      <p>When you choose to connect your TikTok account via TikTok Login Kit, Slyxes requests minimal access strictly necessary for application functionality:</p>
+      <ul>
+        <li><strong>Basic Profile Information (<code>user.info.basic</code>):</strong> Includes public profile identifiers (such as username, display name, and avatar URL). This is used solely to display your connected channel status inside the Slyxes Creator Studio interface.</li>
+        <li><strong>OAuth Authentication Tokens:</strong> Temporary access tokens and refresh tokens returned by TikTok to authenticate API requests on your behalf.</li>
+      </ul>
+
+      <h2>3. Where Your Data is Stored</h2>
+      <p>All sensitive credentials and authentication tokens are kept strictly on your local computer:</p>
+      <ul>
+        <li>Credentials are encrypted using the operating system's native cryptographic protection (Windows Data Protection API / DPAPI).</li>
+        <li>Data is stored in your personal user profile directory (<code>%LOCALAPPDATA%\Slyxes\social\credentials.json</code>).</li>
+        <li>Your credentials, tokens, and video files are <strong>never transmitted</strong> to any external Slyxes cloud server.</li>
+      </ul>
+
+      <h2>4. Data Sharing & Third Parties</h2>
+      <p>We do not sell, rent, trade, or transfer any of your personal data or TikTok account details to third parties or advertising networks. Direct communication only occurs between your local machine and the official APIs of the platforms you choose to connect (e.g., TikTok API at <code>open.tiktokapis.com</code>).</p>
+
+      <h2>5. Data Retention, Disconnection & Deletion</h2>
+      <p>You have complete control over your data at all times:</p>
+      <ul>
+        <li><strong>Immediate Local Removal:</strong> You can disconnect your TikTok account at any time in Slyxes by navigating to <em>Creator Studio &rarr; Social Accounts &rarr; Disconnect</em>. This immediately purges all saved tokens and profile data from your machine.</li>
+        <li><strong>Revoking TikTok Authorization:</strong> You can revoke Slyxes' permission at any time directly through TikTok: go to your TikTok mobile app or website, open <em>Settings &amp; Privacy &rarr; Security &rarr; Manage App Permissions</em>, and remove Slyxes.</li>
+      </ul>
+
+      <h2>6. Children's Privacy</h2>
+      <p>Slyxes is not intended for use by children under the age of 13. We do not knowingly access or process data from children.</p>
+
+      <h2>7. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. The latest version will always be posted at this URL with the updated revision date.</p>
+
+      <h2>8. Contact Us</h2>
+      <p>If you have any questions or data privacy inquiries regarding Slyxes, please reach out via email at: <a href="mailto:avantakun@gmail.com">avantakun@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+      &copy; 2026 Slyxes. <a href="terms.html">Terms of Service</a>
+    </footer>
+  </div>
+</body>
+</html>
